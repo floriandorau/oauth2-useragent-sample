@@ -11,7 +11,7 @@ git clone git@github.com:floriandorau/oauth2-useragent-sample.git
 After that compile the `Main` class
 
 ```bash
-javac -cp oauth2-useragent-0.11.3.jar src/Main.java
+javac -classpath oauth2-useragent-0.11.3.jar src/Main.java
 ```   
 
 Finally run `Main` to start oauth2-useragent
