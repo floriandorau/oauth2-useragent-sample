@@ -8,14 +8,24 @@ Clone the repository to your local machine
 git clone git@github.com:floriandorau/oauth2-useragent-sample.git
 ```
 
-After that compile the `Main` class
+and got to `src`
 
 ```bash
-javac -classpath oauth2-useragent-0.11.3.jar src/Main.java
+cd src
+```
+
+After that compile the `Main` class from there.
+
+```bash
+javac -classpath .:../oauth2-useragent-0.11.3.jar Main.java
 ```   
 
-Finally run `Main` to start oauth2-useragent
+Finally you can run `Main` to start the oauth2-useragent.
 
 ```bash
-java -classpath out/production/oauth-agent:oauth2-useragent-0.11.3.jar Main
+java -classpath .:../oauth2-useragent-0.11.3.jar Main
 ```
+
+### Note ###
+You might need to use `;` instead of `:` on a Windows machine when defining the classpath 
+[see here].(https://stackoverflow.com/a/17408791)
